@@ -1,0 +1,279 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/seansugrue/rtnInv
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 157
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 10
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: ROTTEN
+    style:
+      backgroundColor: black
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw4QEBAQEBAQEBARFxEXFwoKFw8PEA0RIB0WIiAdHx8kKCgsGCYlJx8fLTEtJikrLi4uFx86ODMsNygtPisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAJYAlgMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAAMEBgcBAgj/xAA+EAABAwIEAgcFBgUDBQAAAAABAgMRAAQFEiExQVEGEyJhcYGRBzJCobEUI1LB0fAzQ2Lh8SRjchUWc4LC/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AKiTXJrhNdoHE16SP2NKbB/fOvSD/igfaZK1BKRJP7n+9C8VxwMkt2qgVfFe7meIb5Ac9zXvpBiPUN9Qj+K6AVrG7bZ1CB3nc90CqjNA84+pRlRJPNZknv1pvOeFeJpFdBLtL55lQW2tSFD4myQauWHdImLwpbvMrTx2xNsRPc4B7w796oJOtekOEGR86DaT0NbRBdcdyKEpuGko6lYOxB10p5OB4W2IWXl5v5mbJk8IEVXfZt7QV2/+lfUFW6zALvaDCjsY/Dz9a0XEMBt77Opk9S+379orUa6gjmCNQRoaCsYh0EWUdbYufaUazbrhLyfDgryqmPtrQopWlSFDdtwFKh5GtY6N2i7ZzKVqnik61YMUs7S6GS5bSv8A3IhQ896DBk17SDNaPj/sxOq7JyeP2V87j+lX6+tZ/c2zjSi24hSFp3bcBSRQNp0rs0q8kUHrN+zXaaKqVBHINetf8UppAUCH7NOIKUytXuoBURzA1jz2rwKiYy5lYX/UUJ05TP5UFZvLhTq1LUZUokk95piK6TXkGgQpTXma6f2aDpNKdKcZt1r2GnM7VKRhx4n0oIjbhBBG9at7P8bXeJbteuDN8wD9kvVn+INywv8AEDumdtY5VmirGONebdbjK0uIJCkkEKToQoGQaD6Z6OYk1iKVpcQba+YOV63HZWhY4jmD+dSr6zcRqBI9Z76oLWKrvrdrGLOBiViEi6tW9PtjAGpjjpr6jgK1HA8TZvrZu4bhTboByq1yq4g94oIGA4rr1aoA4E7jupdLejDd+2QYS6kHq7kbg8lcwa7i2EZe23tyGmXlUzAr1Sk9W576eJ+IfrQYHcsrbWpCwUrQSlSD8KgYNNg1efazg3VXCLlI7D+io2S6P1H0NUSg9A/s60q8yKVAzH75UgKeKK4U8qBsVAx8fcmOCk7ef60SKKbuGQtJQdlCJ5HnQUYmuGnrllSFFKtCCdKYJoOTUmytS5qfdHE8aikSYG/KrDZW5AAAmPQUEhhlIEa/QVJDKeR86ct2iPeFOqbJ2oILjKOXmaivMAfoN6JLtzUN9g0DvRnHnsOuUvtGY0U0rVLiDuD3H+9aj7Ouklq3iLlrbrH2O9AeaZVvaPn3m/CZjuisZuUxXcFxBVvcsvJJBbUlWm4g0H18R6fhPDvqC7bhKswGh4J1865YX4cQ05rDyUkRqNRNPpfGbIqNfdUdJ7vGghdKMHTfWi2TGYwpC/wuDY/UedYG8yptSkLGVSSUqQd0qBgivpJo/sVkPtYwfqblNykQi4HajYOjf1EH1oKKTSrs0qCbe2TzOXrEQFbKGoMbjxqKVUY6U3biW0IX7oPvaSTwoNb3DLjZJGTJ/MTKp8RQcJrkTUnBLf7SlRCeyme1sod4HGnrC3CStb0IbZ1KlaBR4AfWgrvTO2ZbDMgh4g5lcxwkd1VJaeW3MUZxK4Xf3ehHaMJzEJATwo4vo3b2zeZztKgkSdFakT4SD6UFTwttJcleyfmau+HBlQ7JHhTaMCyfxUsxCSAgA7iYJ5idadvMGUhlLzEJUXAjq/hUnLJOvLT1oJRZH+K8uvMo0UtPgNT6Cg7RdL2R53M32uwz2ToJiaIKtwICClI4rSNvzNAy5etmcqVq8EECoNzdA7JWO8pNK5ZKT23IHftXEWzatngo8pg+VAIuX0k//J0qGo8aKYnaLgAjOrNCVHfLBJ140HuzlVoIEDs8Ae6g+gug2LlzDWJOrYiRpJG3yq3XL2dqAe0nIsKGhPMA+VZj7JrjPZOI7IhXvbkSK0Bp4oCBAMojMdxlIO3maA7YXZmFb6ad1C/aTYB/DniACprK4knhB1+RNOofhae1ppoeANF8UQl22fTuFtuj1BFB84V2vUUqAN0huHFv5eszBGhgygKO4HcNvKlZ3am5A1ChBSdQQaHJcA3jzqw2LaE5SptDgP8AMWTtzAiI+dB6wbGU24UtRyt6pgaqUSNhQLpD0icuoQkZGU7NjdR5k8TUnpa0JayN9WmFSESEqVO48qrpbNBIwVQTcsE7BxGvnV86ekJyJTok9WnXYJGaPmTWdoQRB2IIjxFH73pKX0BDzQVHxIUUxr586C+dGMKTeW7XWEobbaUS4SBK5JA75ka1Lw/AftDjaXT/AKOxzrWsaKeuFgEIHcE5ZNEug1i5f4fbOtoatkJJZEguKKEGM5J0JJnhwopjgZtUfZ2CIBUSdy44dSoniSeNBmvShDfXgtgIQDBKdMoPGooJQMqtSOJ40VxO2zBWYb8N5oOgKSIBBH+4AojwO9AOvGFuq3nv5UVNjbdQEkErHxJEGfGvaELOwbR/xST56mnvsjh3dPg2EJmgr71wttTSVdrLmkHcJOg84E+dRcRtEq1T8qN3uGADQf8AsdSTzJO5qG23AI5caCyeyC5yuvMH4hInuNay20chKtchBhJ1y8Y8p9Kwjopd9TfNEmAolMjTettsHYUDqUqnNP4e6gKLQQmNOzsTrmHOp9pcE2zsxKEuaJ8DUG1JIynhmSCr8I2PjBFP2rfZdRwWhY8SQR+dBhIIpU6qxeSSCgmCROlKgoCzKhm4kfOrIsoV2/tSmmwB90ADl8BxoeeiuIBQhhUbykhQHoaONYc0k/fNukaSlaFhPyoJWG2xfSSpSbhCIKHfdPeCOY0pjFcHYOpAQo6fd6ATtPnUtnDw0pD1rKk5hLCTIKDoSJ5AnTuofiK1l5SJPdPDlQBzgayMySCOR0M7VCawx1x9u3SPvHVoQlJ/ETA+tWm0IGadBIVlPCf70T9nuH9fjTLhEpYzuEnbQafMig2JjCBZYci0twSLdB+8GhKgCSe8kkmsnViZUSpZJidtSe6OdbB0nxQW9uSDqYAG8k8+6sWxN4POBkEBS1E50QNTuQB4UCHSZorS060tAXoHFQRPfG1NYnaJQvsGUq+VDHLRSFGVhafx8o8dqmMCYJUT3HgKCVa26joPWnVgp0A8zT9k5lINT3whevHmKAV1Obf0oVf2GXUbcqsaGI/tXi7t8yTQZ1dFTbiVDdJBHka2jCcW6xhh2MxUkSBrChxrIekLGWfrV49l96HLRTSjq2owOJB4UGkG8IKSRKVBKpBgkgwdfSjtiQVJI2P0iqNjd4GbZpXxlWRI2I1BP0qx9F7vOQJ2jVXA8aBLsnVCU3Fs4mT2n0oVB5TzpVTMU9shtn3rdyyTnaccQVJXoqDAO3KuUES0upSFJ7QOoUNJHCpyL0xqk+kis3w7EbkAkLISo6HcpkcBy00os5j7yIUFnl1caTP1oLp9pTxQPSO+qnilkkXJe+E6pSBt31z/ALkfKTISQgCTxJJH96av8S65gr/mIk5E6BLc6A8zQBcTu0pWQNtdPHX5Grx7IiE/ablRA7IQE8RrJPyHpWVuulRM1pHRI5LIgnKYKu8g86A90xx1tZ6lRBCZJUNNeVBVXFw00C1au6zD/VdsJPIkTFRujGFKcuTePgdW1JSw7qVucCRy7qJYn0xvc6kBxETEkAhOu3hQUu7fEnNmQo8HAU/UU5hpzLgqyylRzK1BI/ZqyYo4p9ILiUrzT2k93E1T73D1tnM2VJH4TqKC5IsFpabcI0WAQec17bBBA/ZophVyXbdhlQ9xKCP60br9J08K9u2KgpJA7GwUjUGD9aD0xbApEimrizIBMSKMIb7MJidNTwFdu09hQHhzJJFBknS9uCR86nex5ZL7zY4pmTwg13pdbQCeI+LnQ32V3gaxNqTCVSCOYiaC89ObuH7e1SR9yjMo7jrFa/IRVk6EPQgnjPpWX3uKqeuXn1ElTi1H1Og8hV76N3nVtsoO61THGgzP2nMZMXvgButKo5SlJpUb9oNrnxO7WTqVJHPQJTXKAuz0aYSkBRUT3HYeNdXgdv8A1kcpgaeVdYeeeM5ylA+JMJHgONBcYxNAcDSZUZjMSSRQEncOtgCMqgDwCjrTK8PYAhCimQRCoMjkaDvpJcCEqUkjikmhtzibiFZc+eOK9D6igHrZyu5FcFRptM1dMNUpxKE7AJAnQJEHeKp+LiXUOJ0DuVU8jx18asNleSAmddJMbQNAKC2reKkFKQfPQDgDVQxG2WHANIJI7gRRO3xBRKNe0IkJ2B19agOPTlWrclWitTO2lAwi5XMKMJM6DYd9FL1xIaAKR2spDg1jn+VN3oadbS22BKjIXMEGACJ8ZM99BXwtsAKAIUlSMoUFEHSe+eFBaMExwpU2dFdXKdNFZDoatltjSElaDlhWUhY0k8dOHA1lloxlSSmc6YIB02OviKfbxCCFcTE8EhXL0oNQtrqN/izCfxQanF1BSpIgczsNuFUG0xJUZioZQjQnWFTEeNSHcdgOFSkyMu26tNx3RQROn9yFIEcAOyNJ7/Os3wm9UxcIeTu2oKjfY0cx/GC9I4cvzJqtxGtBbcfYUw91raVm1fhxp+CUlJ1IkaSkyCKsGAdI0ykqEBPEcgNADzqt9EPaBd4d2EZXmDvZ3HabnmOXlVpu/a6hwR/0uyP/AJUhXjsKATi98p55x1UZlkkxw7qVMu4/h90fvrcWShr12Gk5V9xSSQOcjlXKCwYzdi2toTufqaoeGEquEE85k0V6WX2dQSnhr3zQjClQ4k+OlAfW7lUtY79aql26VKJPPhRnF39wPlxNBAJNBOuNWELG7St+46j5zU22vIb4Sd1j4R+saUOtlZuua/EmR/yGo+U0yw9shWkcT48aA5b3eUkhWs6K5DhTC7wApJ+EmT3zIoat/KCAZ1OvGOFMuPK0Tw+s0Bm5vcqgUkjQ5UpOqVAyDPnUXEcSK1lXPtabZydT40NfVsE+R415nn6UBtq5ORsTosZeZ3JJ9Sa6SgpOfNHwrRuFDaRyNCWruCkRMTA11B4GpWdSkgGZGuY7SdqCe3cqUgNyAPeJJ0kcfCmutW7KRryUOP8Aao7Fgt1RQkHRI7XATwPhNFr1huxtzlMvOiM53APLlQVm7V2ygGQk+Mq41xbcJ140rNqTtJ+tS78RCSNRQCViK9IqQ0yVGACo/hTrVqwPocp2FvLShOn3LZBdPiPhoK/Y4XdOglllxwDctpJApVp+J3gwq3ZS1mUtZ91R91AH6xSoM0vV5lqJrzaKhQpUqD1drzKNRwkClSoPdiuHknkRpzFeMQayOLHJR1FdpUEVCvzrirlZMkztoaVKgWY04rYVylQesieyddaLYRaKeklWmYEjnAMUqVBbbS3Qyjsp2Gp4qNU3pNdFx0A8KVKg84CznfbHeN6NdK8HyvkhWhyiOI0pUqCZglihgI0zKdElexSjgB+dWPCmUoPWkSVLygDgTrJrlKgAe0N8uPoB2SNByrlKlQf/2Q==
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 907
+    content: "\r\nThe default interactive shell is now zsh.\r\nTo update your account to use zsh, please run `chsh -s /bin/zsh`.\r\nFor more details, please visit https://support.apple.com/kb/HT208050.\r\n\e[?1034hSeans-MacBook-Pro:rtnInv seansugrue$ "
+  - delay: 1940
+    content: c
+  - delay: 71
+    content: l
+  - delay: 236
+    content: e
+  - delay: 112
+    content: a
+  - delay: 209
+    content: r
+  - delay: 252
+    content: "\r\n"
+  - delay: 5
+    content: "\e[H\e[2JSeans-MacBook-Pro:rtnInv seansugrue$ "
+  - delay: 2116
+    content: 'n'
+  - delay: 139
+    content: o
+  - delay: 154
+    content: d
+  - delay: 190
+    content: e
+  - delay: 374
+    content: m
+  - delay: 138
+    content: o
+  - delay: 426
+    content: c
+  - delay: 2464
+    content: "\b\e[K"
+  - delay: 348
+    content: 'n'
+  - delay: 545
+    content: ' '
+  - delay: 211
+    content: s
+  - delay: 146
+    content: e
+  - delay: 164
+    content: r
+  - delay: 249
+    content: v
+  - delay: 217
+    content: e
+  - delay: 84
+    content: r
+  - delay: 597
+    content: .
+  - delay: 297
+    content: j
+  - delay: 170
+    content: s
+  - delay: 712
+    content: "\r\n"
+  - delay: 298
+    content: "\e[33m[nodemon] 2.0.6\e[39m\r\n\e[33m[nodemon] to restart at any time, enter `rs`\e[39m\r\n\e[33m[nodemon] watching path(s): *.*\e[39m\r\n\e[33m[nodemon] watching extensions: js,mjs,json\e[39m\r\n\e[32m[nodemon] starting `node server.js`\e[39m\r\n"
+  - delay: 289
+    content: "Connection is ROTTEN\r\n"
+  - delay: 4782
+    content: "\e[32m[nodemon] restarting due to changes...\e[39m\r\n"
+  - delay: 23
+    content: "\e[32m[nodemon] starting `node server.js`\e[39m\r\n"
+  - delay: 150
+    content: "Connection is ROTTEN\r\n"
+  - delay: 3170
+    content: ^C
+  - delay: 11
+    content: 'Seans-MacBook-Pro:rtnInv seansugrue$ '
+  - delay: 3351
+    content: W
+  - delay: 166
+    content: E
+  - delay: 173
+    content: L
+  - delay: 154
+    content: L
+  - delay: 341
+    content: ' '
+  - delay: 369
+    content: W
+  - delay: 278
+    content: A
+  - delay: 125
+    content: S
+  - delay: 329
+    content: 'N'
+  - delay: 1375
+    content: ''''
+  - delay: 322
+    content: T
+  - delay: 302
+    content: ' '
+  - delay: 232
+    content: T
+  - delay: 140
+    content: H
+  - delay: 218
+    content: A
+  - delay: 284
+    content: T
+  - delay: 777
+    content: ' '
+  - delay: 232
+    content: F
+  - delay: 167
+    content: U
+  - delay: 372
+    content: 'N'
+  - delay: 517
+    content: .
+  - delay: 298
+    content: .
+  - delay: 308
+    content: .
+  - delay: 441
+    content: ' '
+  - delay: 223
+    content: T
+  - delay: 208
+    content: A
+  - delay: 187
+    content: K
+  - delay: 222
+    content: E
+  - delay: 134
+    content: ' '
+  - delay: 217
+    content: 'Y'
+  - delay: 183
+    content: O
+  - delay: 128
+    content: U
+  - delay: 383
+    content: R
+  - delay: 165
+    content: ' '
+  - delay: 249
+    content: B
+  - delay: 173
+    content: L
+  - delay: 250
+    content: U
+  - delay: 617
+    content: E
+  - delay: 189
+    content: ' '
+  - delay: 246
+    content: P
+  - delay: 199
+    content: I
+  - delay: 247
+    content: L
+  - delay: 576
+    content: L
+  - delay: 358
+    content: .
+  - delay: 289
+    content: .
+  - delay: 234
+    content: .
+  - delay: 2379
+    content: "\r\n> "
+  - delay: 6886
+    content: "\r\nSeans-MacBook-Pro:rtnInv seansugrue$ "
+  - delay: 3177
+    content: "logout\r\n"

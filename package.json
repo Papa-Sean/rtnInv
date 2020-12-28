@@ -1,0 +1,29 @@
+{
+  "name": "rtninv",
+  "version": "1.0.0",
+  "description": "CRUD Inventory Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Papa-Sean/rtnInv.git"
+  },
+  "author": "Papa-Sean",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Papa-Sean/rtnInv/issues"
+  },
+  "homepage": "https://github.com/Papa-Sean/rtnInv#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-generator": "^4.16.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
